@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geranate Barcode</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="JsBarcode.all.min.js"></script>
 </head>
 
 <body>
-  <div id="hide">
-  <h1>Genarate Barcode</h1>
-  <p>Enter barcode Value : 
+  <div id="hide" class="container">
+  <h1>Generate Barcode</h1>
+  <p>Enter Barcode Value : 
   <input type="text" id="txt_input">
-  <button id="btn_genarate" onclick="document.getElementById('hide').style.display='none'">submit</button>
+  <button id="btn_genarate" onclick="document.getElementById('hide').style.display='none'" class="button-sub">submit</button>
   </p>
   </div>
   <svg id="barcode"></svg>
+
+  
 
 <script>
   document.getElementById("btn_genarate").addEventListener('click', function() {
